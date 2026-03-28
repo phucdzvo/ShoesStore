@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShoeStore - Giày Thể Thao</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="brand" href="#">
+          <span class="logo" aria-hidden="true">S</span>
+          ShoeStore
+        </a>
+        <div class="nav-links" aria-label="Primary">
+          <a href="#">Trang chủ</a>
+          <a href="#products">Sản phẩm</a>
+          <a href="#about">Giới thiệu</a>
+          <a href="#contact">Liên hệ</a>
+        </div>
+        <div class="nav-icons">
+          <button aria-label="Giỏ hàng">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 18C5.9 18 5 18.9 5 20C5 21.1 5.9 22 7 22C8.1 22 9 21.1 9 20C9 18.9 8.1 18 7 18ZM1 2V4H3L6.6 11.59L5.25 14.04C5.09 14.32 5 14.65 5 15C5 16.1 5.9 17 7 17H19V15H7.42C7.28 15 7.17 14.89 7.17 14.75L7.2 14.65L8.1 13H15.55C16.3 13 16.96 12.58 17.3 11.97L21.88 3.97C21.95 3.84 22 3.7 22 3.55C22 3.25 21.78 3 21.47 3H5.21L4.27 1H1ZM17 18C15.9 18 15 18.9 15 20C15 21.1 15.9 22 17 22C18.1 22 19 21.1 19 20C19 18.9 18.1 18 17 18Z"/>
+            </svg>
+          </button>
+          <button aria-label="Tài khoản">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 12C14.76 12 17 9.76 17 7C17 4.24 14.76 2 12 2C9.24 2 7 4.24 7 7C7 9.76 9.24 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"/>
+            </svg>
+          </button>
+          <button aria-label="Tìm kiếm">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"/>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <section class="hero">
+      <div class="container">
+        <h1>Bộ sưu tập giày thể thao mới nhất 2026</h1>
+        <p>Khám phá ngay những mẫu giày hot trend mới nhất đến từ các thương hiệu hàng đầu thế giới – nơi hội tụ phong cách, chất lượng và đẳng cấp. Tất cả sản phẩm đều chính hãng 100%, được tuyển chọn kỹ lưỡng để mang đến cho bạn trải nghiệm hoàn hảo từ thiết kế đến độ bền.</p>
+        <p>Nâng tầm phong cách của bạn ngay hôm nay với những đôi giày đang dẫn đầu xu hướng!</p>
+        <a class="cta" href="#products">Mua ngay
+          <span aria-hidden="true">›</span>
+        </a>
+      </div>
+    </section>
+  </header>
+
+  <section class="categories" aria-label="Danh mục sản phẩm">
+    <div class="container">
+      <div class="category">Sneaker</div>
+      <div class="category">Running</div>
+      <div class="category">Sport</div>
+      <div class="category">Boots</div>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="products">
+      <div class="section-header">
+        <h2>Sản phẩm</h2>
+        <div class="sort">
+          
+          <select aria-label="Sắp xếp">
+            <option value="new">Mới nhất</option>
+            <option value="price-asc">Giá: Thấp đến cao</option>
+            <option value="price-desc">Giá: Cao đến thấp</option>
+            <option value="discount">Đang giảm giá</option>
+            <option value="favorite">Yêu thích</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="products">
+        <article class="product">
+          <img src="images/image 3.png" alt="Classic White Sneakers">
+          <div class="product-info">
+            <span>Nike</span>
+            <h3>Classic White Sneakers</h3>
+            <div class="price">
+              <span class="current">1.290.000 ₫</span>
+              <span class="old">1.590.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/image 2.png" alt="Nike Air Max Running">
+          <div class="product-info">
+            <span>Nike</span>
+            <h3>Nike Air Max Running</h3>
+            <div class="price">
+              <span class="current">2.940.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/image 4.png" alt="Athletic Red Performance">
+          <div class="product-info">
+            <span>Reebok</span>
+            <h3>Athletic Red Performance</h3>
+            <div class="price">
+              <span class="current">2.190.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/image 5.png" alt="Modern Blue Sneakers">
+          <div class="product-info">
+            <span>Vans</span>
+            <h3>Modern Blue Sneakers</h3>
+            <div class="price">
+              <span class="current">1.690.000 ₫</span>
+              <span class="old">1.990.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Premium Black Jordan.png" alt="Premium Black Jordan">
+          <div class="product-info">
+            <span>Air Jordan</span>
+            <h3>Premium Black Jordan</h3>
+            <div class="price">
+              <span class="current">3.450.000 ₫</span>
+              <span class="old">4.200.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Adidas Ultra Boost.png" alt="Adidas Ultra Boost">
+          <div class="product-info">
+            <span>Adidas</span>
+            <h3>Adidas Ultra Boost</h3>
+            <div class="price">
+              <span class="current">2.650.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Puma Sport Classic.png" alt="Puma Sport Classic">
+          <div class="product-info">
+            <span>Puma</span>
+            <h3>Puma Sport Classic</h3>
+            <div class="price">
+              <span class="current">1.450.000 ₫</span>
+              <span class="old">1.850.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Converse Chuck All Star.png" alt="Converse Chuck All Star">
+          <div class="product-info">
+            <span>Converse</span>
+            <h3>Converse Chuck All Star</h3>
+            <p class="category-label">Thể loại: Sneaker</p>
+            <div class="price">
+              <span class="current">890.000 ₫</span>
+            </div>
+          </div>
+        </article>
+        <article class="product">
+          <img src="images/New Balance 990v5.png" alt="New Balance 990v5">
+          <div class="product-info">
+            <span>New Balance</span>
+            <h3>New Balance 990v5</h3>
+            <div class="price">
+              <span class="current">3.290.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Asics Gel-Nimbus.png" alt="Asics Gel-Nimbus">
+          <div class="product-info">
+            <span>Asics</span>
+            <h3>Asics Gel-Nimbus</h3>
+            <div class="price">
+              <span class="current">2.350.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/ADIDAS PREDATOR.jpg" alt="Adidas Predator Sport">
+          <div class="product-info">
+            <span>Adidas</span>
+            <h3>Adidas Predator Sport</h3>
+            <div class="price">
+              <span class="current">2.100.000 ₫</span>
+              <span class="old">2.450.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Timberland Premium Boot.png" alt="Timberland Premium Boot">
+          <div class="product-info">
+            <span>Timberland</span>
+            <h3>Timberland Premium Boot</h3>
+            <div class="price">
+              <span class="current">4.150.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Nike React Infinity 3.png" alt="Nike React Infinity">
+          <div class="product-info">
+            <span>Nike</span>
+            <h3>Nike React Infinity</h3>
+            <div class="price">
+              <span class="current">2.750.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Under Armour Training.png" alt="Under Armour Training">
+          <div class="product-info">
+            <span>Under Armour</span>
+            <h3>Under Armour Training</h3>
+            <div class="price">
+              <span class="current">1.820.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Dr Martens 1460.jpeg" alt="Dr Martens 1460">
+          <div class="product-info">
+            <span>Dr Martens</span>
+            <h3>Dr Martens 1460</h3>
+            <div class="price">
+              <span class="current">3.990.000 ₫</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="product">
+          <img src="images/Skechers GO WALK.jpg" alt="Skechers GO WALK">
+          <div class="product-info">
+            <span>Skechers</span>
+            <h3>Skechers GO WALK</h3>
+            <div class="price">
+              <span class="current">1.680.000 ₫</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Ưu đãi">
+      <div class="container">
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">🚚</div>
+          <h4>Miễn phí vận chuyển</h4>
+          <p>Cho đơn hàng từ 500.000₫</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">🔄</div>
+          <h4>Đổi trả dễ dàng</h4>
+          <p>Trong vòng 7 ngày</p>
+        </div>
+        <div class="feature">
+          <div class="feature-icon" aria-hidden="true">✅</div>
+          <h4>Chính hãng 100%</h4>
+          <p>Cam kết hàng chính hãng</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Liên kết nhanh</h4>
+          <ul class="footer-list">
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#products">Sản phẩm</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+            <li><a href="#">Hướng dẫn sử dụng</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Hỗ trợ khách hàng</h4>
+          <ul class="footer-list">
+            <li><a href="#contact">Liên hệ</a></li>
+            <li><a href="#">Câu hỏi thường gặp</a></li>
+            <li><a href="#">Vận chuyển</a></li>
+            <li><a href="#">Thanh toán</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Kết nối với chúng tôi</h4>
+          <div class="social" aria-label="Mạng xã hội">
+            <a href="#" aria-label="FaceBook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.46 6c-.77.35-1.6.59-2.46.7a4.26 4.26 0 0 0 1.88-2.36 8.47 8.47 0 0 1-2.7 1.03 4.24 4.24 0 0 0-7.22 3.86A12.04 12.04 0 0 1 3.1 4.67a4.24 4.24 0 0 0 1.31 5.66 4.2 4.2 0 0 1-1.92-.53v.05a4.24 4.24 0 0 0 3.4 4.16 4.3 4.3 0 0 1-1.91.07 4.24 4.24 0 0 0 3.95 2.95A8.52 8.52 0 0 1 2 19.54 12.03 12.03 0 0 0 8.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.36-.02-.54A8.34 8.34 0 0 0 22.46 6Z"/>
+              </svg>
+            </a>
+            <a href="#" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-contact">
+            <div>Email: support@shoestore.vn</div>
+            <div>Hotline: 1900 1234</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.product').forEach(product => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'favorite-btn';
+      btn.setAttribute('aria-label', 'Yêu thích');
+      btn.textContent = '♡';
+      btn.addEventListener('click', () => {
+        const active = btn.classList.toggle('active');
+        btn.textContent = active ? '❤' : '♡';
+      });
+      product.appendChild(btn);
+    });
+  </script>
+</body>
+</html>
